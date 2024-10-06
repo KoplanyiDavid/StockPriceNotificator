@@ -8,7 +8,7 @@ from fun_messaging import send_message
 message = ""
 
 # send the message at 8am in the morning
-if True: #8 == datetime.now().hour:
+if 8 == datetime.now().hour:
 
     # construct the message
     message += f"SEDG closing price: {get_stock_data()}"
