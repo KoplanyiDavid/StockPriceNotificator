@@ -16,7 +16,7 @@ if 8 == datetime.now().hour and difference_in_percentage > 5:
 
     # construct the message
     message += f"SEDG closing price: {last_day_price}"
-    for news in get_news_data():
+    for news in get_news_data(news_num=2):
         message += "\n"
         message += str(news)
 
